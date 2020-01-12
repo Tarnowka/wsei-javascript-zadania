@@ -4,6 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>WSEI</title>
+
+<script>
+
+window.addEventListener('DOMContentLoaded', () => {
+    
+    let buttons = document.querySelectorAll("button");
+    let pElements = document.querySelectorAll("p");
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function(){
+            let number = parseInt(pElements[i].querySelector('span').innerHTML);
+            pElements[i].querySelector('span').innerHTML = number + 1;
+        })
+        
+    }
+
+  })
+
+</script>
+
 </head>
 
 <body>

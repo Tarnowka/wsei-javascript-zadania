@@ -5,6 +5,28 @@
     <meta charset="UTF-8">
     <title>WSEI</title>
     <link rel="stylesheet" href="style/style.css">
+
+<script>
+
+    window.addEventListener('DOMContentLoaded', () => {
+    
+        var div = document.getElementById('box');
+        var globalX = document.getElementById('globalX');
+        var globalY = document.getElementById('globalY');
+        var localX = document.getElementById('localX');
+        var localY = document.getElementById('localY');
+        div.addEventListener('mousemove', function(e){
+            globalX.innerHTML = e.pageX;
+            globalY.innerHTML = e.pageY;
+            let rect = getBox.getBoundingClientRect();
+            localX.innerHTML = e.pageX - rect.left;
+            localY.innerHTML = e.pageY - rect.top;
+        })
+    
+    })
+            
+</script>
+
 </head>
 
 <body>

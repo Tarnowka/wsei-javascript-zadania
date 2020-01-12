@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style/style.css">
+
+<script>
+
+    window.addEventListener('DOMContentLoaded', () => {
+
+        const divs = document.getElementsByTagName("div");
+        Array.from(divs).forEach(element => {
+            element.addEventListener('click', function(){
+                var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+                this.style.backgroundColor = randomColor;
+            })
+        });
+
+    })
+        
+</script>
+
 </head>
 
 <body>
