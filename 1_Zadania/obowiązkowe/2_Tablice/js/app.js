@@ -1,3 +1,5 @@
+/////////////////////////// 0
+
 function distFromAvarage(numberArray){
     var avarage=0;
     numberArray.forEach(element => {
@@ -17,7 +19,7 @@ function distFromAvarage(numberArray){
 
 distFromAvarage([1,2,3,4,5,6,7]);
 
-////////////////////////////////////
+/////////////////////////// 1
 
 let fruits = ['apple', 'orange', 'banana', 'peach', 'pear'];
 console.log(fruits[0]);
@@ -26,7 +28,7 @@ for(let count=0;count<fruits.length;count++){
     console.log(fruits[count]);
 }
 
-///////////////////////////////////////////////////////////////
+/////////////////////////// 3
 
 function printTable(array){
 
@@ -35,7 +37,7 @@ function printTable(array){
     }
 }
 
-///////////////////////////////////
+/////////////////////////// 4
 
 function multiply(array){
     var temp = 1;
@@ -45,7 +47,7 @@ function multiply(array){
     console.log(temp);
 }
 
-///////////////////////////////////
+/////////////////////////// 5
 
 function getEvenAvarage(array){
     var arg=0;
@@ -70,42 +72,45 @@ getEvenAvarage([1,2,3,4,5,6,7]);
 getEvenAvarage([1,1,1,1])
 getEvenAvarage([2,8,3,7,4])
 
-//////////////////////////////////
+/////////////////////////// 6
 
 function sortArray(array){
-
-
-    sortArray(array){
-        console.log(array.sortArray)
-    }
-
-    array.forEach(element=>{
-        console.log(array[element])
-    })
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] > array[i + 1]) {
+          var a = array[i];
+          var b = array[i + 1];
+          array[i] = b;
+          array[i + 1] = a;
+        }
+      }
+      console.log(array.sort(function(a, b){return a-b}));
 }
 
 sortArray([145,11,3,64,4,6,10])
 
-//////////////////////////////////
+/////////////////////////// 7
 
 function addArrays(array1,array2){
-    var dlugosc=0;
-    var array3=[];
-    if(array1>=array2) 
-    {
-        dlugosc=array1.length;
-        dlugosc2=array2.length;
+    var longerArray;
+    var shorterArray;
+    var finalArray=[];
+    if(array1.length>array2.length){
+        longerArray=array1;
+        shorterArray=array2;
     }
-
-
-    for(let i=0; i<dlugosc; i++){
-        var first = array1[i]!=null ? array1[i] : 0;
-        var second = array2[i]!=null ? array2[i] : 0;
-
-        array3[i]=first+second;
-        console.log(array3[i]);
+    else{
+        longerArray=array2;
+        shorterArray=array1;
     }
-
-}
+    for (var i = 0; i < longerArray.length; i++) {
+        if(typeof shorterArray[i] === 'undefined'){
+            finalArray[i]=longerArray[i];
+        }
+        else{
+            finalArray[i]=longerArray[i]+shorterArray[i];
+        }
+    }
+    return finalArray;
+    }
 
 addArrays([2,3,1,5,3,5], [3,1,76,1])
