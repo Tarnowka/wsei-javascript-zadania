@@ -1,4 +1,3 @@
-  
 var buttons = document.getElementsByClassName("deleteBtn");
 for (const key in buttons) {
     if (buttons.hasOwnProperty(key)) {
