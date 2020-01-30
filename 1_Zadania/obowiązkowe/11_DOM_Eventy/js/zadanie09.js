@@ -26,3 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 })
+
+// a) Użyć funkcji strzałkowej bo przekazuje ona scope
+// const innerFuncOne = () => {}
+// b) użyć bind/apply i przekazać scope do funkcji innerFuncOne
+// c) w innerFuncOne -> console.log('innerFuncOne: ', b)

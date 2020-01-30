@@ -8,7 +8,11 @@ function callOtherFunction(nameOfFunction) {
 
 callOtherFunction(function (a, b) {
     console.log("Pierwsza liczba:", a);
-    console.log("Druga liczba", b)
-    console.log("Wynik", a + b)
+    console.log("Druga liczba", b);
+    console.log("Wynik", a + b);
+    console.log("Wynik odejmowania: ", a - b);
+    console.log("Wynik dzielenia: ", a / b);
+    console.log("Wynik mnożenia: ", a * b);
+    console.log("Liczba pierwsza do potęgi 2", a ** 2);
+    console.log("Liczba druga do potęgi 2", b ** 2);
 })
-

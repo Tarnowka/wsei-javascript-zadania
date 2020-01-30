@@ -32,13 +32,16 @@ var animals = [
 
 ]
 
-for (let i = 0; i < animals.length; i++) {
-
-    for (const key in animals) {
-        
-        console.log(animals[key]);
-            
-    }
-
+for (let index = 0; index < animals.length; index++) {
+    for (const property in animals[index]) {
+        if(Array.isArray(animals[index][property]) == false){
+        console.log(`${property}: ${animals[index][property]}`);
+        }
+        else{
+            for (let i = 0; i < animals[index][property].length; i++) {
+                for (const internalProperty in  animals[index][property][i])
+                console.log(`${property}: ${internalProperty}: ${animals[index][property][i][internalProperty]}`);
+        }
+    }   
 }
-
+}

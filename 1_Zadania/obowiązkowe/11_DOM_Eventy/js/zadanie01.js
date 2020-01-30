@@ -5,3 +5,5 @@ window.addEventListener('DOMContentLoaded', () => {
   menu.classList.add("menu");
   paragraf.innerHTML = "A to jest paragraf w zadaniu 1";
 })
+
+// querySelector nie znajduje elementów w momencie wykonania skryptu, ponieważ nie ma ich jeszcze w DOMie

@@ -5,36 +5,28 @@
  */
 
 
-//Twoj komentarz ...
-//pierwsza funkcja
+//Definicja funkcji jeden
 function jeden() {
 
-    //Twoj komentarz ...
-    //pierwsza zmienna
+    //Definicja zmiennej zmienna1
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
-    //druga funkcja w pierwaszej funkcji
+    //Funkcja dwa
     function dwa() {
 
-        //Twoj komentarz ...
-        //wyświetlenie pierwszej zmiennej
+        //Wywołanie wartości przypisanej do zmiennej zmienna1
         console.log(zmienna1);
 
-        //Twoj komentarz ...
-        //druga zmienna w drugiej funkcji
+        //definicja i przypisanie wartosci do kolejnej zmiennej
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
-    //wywołanie drugiej funkcji
+    //wywołanie funkcji dwa
     dwa();
 
-    //Twoj komentarz ...
-    //wyświetlenie drugiej zmiennej, lecz nie wyświetli dlatego że, zmienna2 jest w drugiej funkcji 
+    //Wywołanie wartości przypisanej do zmiennej zmienna2, zwróci Uncaught Reference Error, ponieważ zmienna ta została zdefioniowana wewn atrz funkcji dwa i nie jest dostępna poza nią 
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
-//wywołanie pierwszej funkcji
+//Wywołanie funkcji jeden
 jeden()

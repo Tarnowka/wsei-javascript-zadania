@@ -23,3 +23,12 @@ przepis.ingredients[0] = 567
 console.log(przepis.title);
 console.log(przepis.serving);
 console.log(przepis.ingredients);
+
+//zad6
+
+var spoon = {isExist: true}
+var fork = spoon;
+fork.isExist  = false;
+console.log(spoon.isExist);
+//łyżka nie istnieje
+  

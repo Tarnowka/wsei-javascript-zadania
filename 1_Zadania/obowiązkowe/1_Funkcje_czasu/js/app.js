@@ -1,3 +1,5 @@
+//zad1
+
 function countHello(number){
     var count=0;
     var intervalid=setInterval(()=>{

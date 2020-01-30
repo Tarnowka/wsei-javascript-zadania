@@ -14,7 +14,7 @@ var task2Array = [
     [9, 10, 11, 12]
 ];
 
-// zad0
+//zad0
 
 function checkArray(arr){
     var foo=[];
@@ -30,13 +30,13 @@ function checkArray(arr){
     return foo;
 }
 
-// zad1
+//zad1
 
 console.log(task1Array[3][2]);
 console.log(task1Array[2].length);
 console.log(task1Array[4][2]);
 
-// zad2
+//zad2
 
 console.log(task2Array[0][0]);
 console.log(task2Array[1].length);
@@ -47,7 +47,7 @@ for (let i = 0; i < task2Array.length; i++) {
     }
 }
 
-// zad3 zad4
+//zad3 zad4
 var foo=[[6,7],[4,2],[5,3]];
 function print2DArray(arr){
     for (let index = 0; index < arr.length; index++) {
@@ -58,7 +58,7 @@ function print2DArray(arr){
 }
 //print2DArray(foo);
 
-// zad5
+//zad5
 function create2DArray(rows, columns){
     var foo= [];    
     var counter = 1;
@@ -70,7 +70,6 @@ function create2DArray(rows, columns){
         } 
         foo.push(temp);
     }
-    //console.log(foo);
     return foo;
 }
 create2DArray(4,4);
