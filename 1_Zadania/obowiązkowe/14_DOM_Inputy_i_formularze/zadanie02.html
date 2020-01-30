@@ -8,6 +8,40 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
 </head>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+const form = document.querySelector('.form-control');
+const img = document.querySelector('img');
+const btn = document.querySelector('.btn');
+
+const windows = document.querySelector('[alt="Windows"]');
+const apple = document.querySelector('[alt="Apple"]');
+const ubuntu = document.querySelector('[alt="Ubuntu"]');
+
+btn.addEventListener('click', function(event){
+    event.preventDefault();
+    switch(form.value){
+        case "Windows": windows.style.display = "block";
+                        apple.style.display = "none";
+                        ubuntu.style.display = "none";
+                        break;
+        case "Os X":    windows.style.display = "none";
+                        apple.style.display = "block";
+                        ubuntu.style.display = "none";
+                        break;
+        case "Ubuntu": windows.style.display = "none";
+                        apple.style.display = "none";
+                        ubuntu.style.display = "block";
+                        break;
+    }
+})
+
+});
+
+</script>
+
 <body>
     <nav class='navbar navbar-default'>
         <div class='container'>

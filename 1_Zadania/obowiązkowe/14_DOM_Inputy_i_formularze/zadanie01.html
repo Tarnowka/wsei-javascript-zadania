@@ -8,6 +8,25 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
 </head>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+var invoice = document.getElementById('invoice');
+var invoiceData = document.querySelector('#invoiceData');
+invoiceData.style.display = "none"
+invoice.addEventListener('change', function(){
+    if(invoice.checked){
+        invoiceData.style.display = "";
+    }else{
+        invoiceData.style.display = "none";
+    }
+})
+
+});
+
+</script>
+
 <body>
     <nav class='navbar navbar-default'>
         <div class='container'>
